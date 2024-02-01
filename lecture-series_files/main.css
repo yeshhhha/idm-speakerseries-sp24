@@ -1,0 +1,172 @@
+@font-face {
+  font-family: HelveticaNeue-Light;
+  src: url("Fonts/Helvetica-Light-Regular.otf") format("opentype");
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial,
+    san-serif;
+  margin: 0px;
+  padding: 0px;
+
+  overflow-x: hidden !important;
+
+  margin-top: 50px;
+}
+
+.missing {
+  display: none !important;
+}
+body,
+.circle {
+  /* background: rgb(238, 174, 202);
+
+  background: rgb(49, 0, 160); */
+  background: radial-gradient(
+    circle,
+    rgba(49, 0, 160, 1) 0%,
+    rgba(252, 215, 70, 1) 100%
+  );
+  color: black;
+}
+
+.circle {
+  /* width: 600px;
+  height: 600px;
+  border-radius: 50%; */
+
+  width: 50vw;
+  height: 100%;
+
+  position: fixed;
+  /* top: 50%; */
+  left: 0%;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  z-index: 10 !important;
+  mix-blend-mode: difference;
+}
+
+/* -- GRID -------------------------------------- */
+/* .contents {
+  padding-top: 0vh;
+} */
+.row {
+  width: 100vw;
+  height: auto;
+  /* background-color:white; */
+  margin-bottom: 100px;
+  text-align: left;
+  margin-left: 5%;
+  /* display: grid;
+  grid-template-columns: 10% 60% 21% 8%; */
+}
+
+.title {
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  text-align: left;
+  background-color: black;
+  color: rgba(252, 215, 70, 1);
+}
+
+.title a:link {
+  color: rgba(252, 215, 70, 1);
+}
+.title a:visited {
+  color: rgba(252, 215, 70, 1);
+}
+
+h1 {
+  margin: 10px 10px 5px 5px;
+  padding: 10px;
+  font-size: 1.8em;
+  font-weight: lighter;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial,
+    san-serif;
+}
+
+h2 {
+  font-size: 10em;
+  margin: 0px 5px;
+  padding: 0px;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.date {
+  font-size: 1.5em;
+  line-height: 1.1;
+  /* border: solid 1px black; */
+  padding-top: 2px;
+}
+.date a {
+  text-decoration: underline;
+}
+
+.speaker {
+  font-size: 10em;
+  line-height: 1;
+}
+
+.about {
+  font-size: 2em;
+  margin: 100px;
+}
+
+.about a {
+  text-decoration: underline;
+}
+
+.nu a {
+  text-decoration: none;
+}
+.logos {
+  position: fixed;
+  display: flex;
+  flex-flow: row;
+
+  right: 0px;
+  top: 0px;
+}
+
+.logos img {
+  height: 70px;
+}
+
+/* -- MOBILE -------------------------------------- */
+@media screen and (max-width: 768px) {
+  .date {
+    font-size: 1em;
+    line-height: 1;
+  }
+
+  .speaker {
+    font-size: 6em;
+    line-height: 1;
+  }
+
+  .about {
+    font-size: 1.5em;
+    margin: 60px;
+  }
+
+  .contents {
+    width: 45vh;
+    padding-top: 50px;
+  }
+
+  .logos {
+    display: flex;
+    flex-flow: row;
+  }
+  .logos img {
+    width: 80px;
+  }
+}
